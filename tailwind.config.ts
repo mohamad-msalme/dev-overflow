@@ -89,7 +89,7 @@ const config = {
         'light-200': '10px 10px 20px 0px rgba(218, 213, 213, 0.10)',
         'light-300': '-10px 10px 20px 0px rgba(218, 213, 213, 0.19)',
         'light-nav': '10px 10px 20px 0px rgba(218, 213, 213, 0.10)',
-        'dark-100': '0px 2px 10px 0px rgba(46, 52, 56, 0.10)',
+        'dark-100': '0px 2px 10px 0px rgba(46, 52, 56, 0.1)',
         'dark-200': '2px 0px 20px 0px rgba(39, 36, 36, 0.04)',
         //
         'light-header': '10px 10px 20px 0px rgba(218, 213, 213, 0.19);'
