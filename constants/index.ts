@@ -1,4 +1,4 @@
-import { NavbarLink } from '@/types'
+import { NavbarLink, TQuetionType } from '@/types'
 
 export const navBarLinks: NavbarLink[] = [
   {
@@ -35,5 +35,24 @@ export const navBarLinks: NavbarLink[] = [
     imgURL: '/assets/icons/question.svg',
     route: '/ask-question',
     label: 'Ask a question'
+  }
+]
+
+export const QUETIONS_TYPE: TQuetionType[] = [
+  {
+    label: 'Newest',
+    tag: 'newest'
+  },
+  {
+    label: 'Recommended Questions',
+    tag: 'recommended'
+  },
+  {
+    label: 'Frequent',
+    tag: 'frequent'
+  },
+  {
+    label: 'Unanswered',
+    tag: 'unanswered'
   }
 ]

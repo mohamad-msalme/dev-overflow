@@ -29,8 +29,8 @@
     --destructive-foreground: 210 40% 98%;
     --Dark-gradient: linear-gradient(
       267deg,
-      rgba(23, 28, 35, 0.41) 10.27%,
-      rgba(19, 22, 28, 0.7) 88.57%
+      rgba(23, 28, 35, 0.91) 10.27%,
+      rgba(19, 22, 28, 0.9) 88.57%
     );
     --border-light: rgba(200, 203, 217, 0.33);
     --border-dark: #101012;

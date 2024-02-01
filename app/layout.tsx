@@ -27,10 +27,7 @@ export default function RootLayout({
             <div className=" min-h-screen grid grid-cols-[minmax(min-content,max-content)_1fr] grid-rows-[100px_1fr] max-sm:grid-cols-1 ">
               <NavBar />
               <Header />
-              <main className=" flex-1">
-                main
-                {children}
-              </main>
+              <main className="">{children}</main>
             </div>
           </ThemeProvider>
         </ClerkProvider>

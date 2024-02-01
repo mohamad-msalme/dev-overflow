@@ -171,6 +171,20 @@ const config = {
             lineHeight: '140%',
             fontWeight: '600'
           }
+        ],
+        'body-med': [
+          '0.8rem',
+          {
+            lineHeight: '130%',
+            fontWeight: '500'
+          }
+        ],
+        'small-med': [
+          '0.7rem',
+          {
+            lineHeight: '130%',
+            fontWeight: '500'
+          }
         ]
       },
       fontFamily: {
@@ -178,8 +192,12 @@ const config = {
         spaceGrotesk: ['var(--font-spaceGrotesk)']
       },
       backgroundImage: {
+        greyIngredient:
+          'linear-gradient(267deg,rgba(23,28,35,0.91)10.27%,rgba(19,22,28,0.90)88.57%)',
         accentIngredient:
-          'linear-gradient(93deg, #FF7000 -13.95%, #E2985E 99.53%, #E2995F 99.54%)'
+          'linear-gradient(93deg, #FF7000 -13.95%, #E2985E 99.53%, #E2995F 99.54%)',
+        authDark: 'url(/assets/images/auth-dark.png)',
+        authLight: 'url(/assets/images/auth-light.png)'
       },
       borderRadius: {
         lg: 'var(--radius)',

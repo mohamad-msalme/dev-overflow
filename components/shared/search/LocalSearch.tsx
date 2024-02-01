@@ -4,18 +4,18 @@ import Image, { ImageProps } from 'next/image'
 import { Button, ButtonProps } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
-type GlobalSearchProps = {
+type LocalSearchProps = {
   inputProps?: InputProps
   buttonProps?: ButtonProps
   imgProps?: ImageProps
 }
-export const GlobalSearch: React.FC<GlobalSearchProps> = ({
+export const LocalSearch: React.FC<LocalSearchProps> = ({
+  inputProps,
   buttonProps,
-  imgProps,
-  inputProps
+  imgProps
 }) => {
   return (
-    <div className=" border border-light-700 dark:border-0 flex-1 max-w-96  p-4 rounded-lg flex-col justify-center items-start gap-3 dark:bg-greyIngredient bg-light-800 lg:max-w-[40rem]">
+    <div className=" border border-light-700 dark:border-0 flex-1  p-4 rounded-lg flex-col justify-center items-start gap-3 dark:bg-greyIngredient bg-light-800">
       <div className=" flex h-6 items-center gap-4 dark:text-light-500 text-light-400 w-full">
         <Button
           {...buttonProps}

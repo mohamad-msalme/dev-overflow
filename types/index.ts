@@ -3,3 +3,8 @@ export type NavbarLink = {
   route: string
   label: string
 }
+
+export type TQuetionType = {
+  label: string
+  tag: string
+}
