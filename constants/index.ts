@@ -1,58 +1,84 @@
-import { NavbarLink, TQuetionType } from '@/types'
+import { IThemes, SidebarLink } from "@/types";
 
-export const navBarLinks: NavbarLink[] = [
+export const themes: IThemes[] = [
+  { value: "light", label: "Light", icon: "/assets/icons/sun.svg" },
+  { value: "dark", label: "Dark", icon: "/assets/icons/moon.svg" },
   {
-    imgURL: '/assets/icons/home.svg',
-    route: '/',
-    label: 'Home'
+    value: "system",
+    label: "System",
+    icon: "/assets/icons/computer.svg",
   },
-  {
-    imgURL: '/assets/icons/users.svg',
-    route: '/community',
-    label: 'Community'
-  },
-  {
-    imgURL: '/assets/icons/star.svg',
-    route: '/collection',
-    label: 'Collections'
-  },
-  {
-    imgURL: '/assets/icons/suitcase.svg',
-    route: '/jobs',
-    label: 'Find Jobs'
-  },
-  {
-    imgURL: '/assets/icons/tag.svg',
-    route: '/tags',
-    label: 'Tags'
-  },
-  {
-    imgURL: '/assets/icons/user.svg',
-    route: '/profile',
-    label: 'Profile'
-  },
-  {
-    imgURL: '/assets/icons/question.svg',
-    route: '/ask-question',
-    label: 'Ask a question'
-  }
-]
+];
 
-export const QUETIONS_TYPE: TQuetionType[] = [
+export const sidebarLinks: SidebarLink[] = [
   {
-    label: 'Newest',
-    tag: 'newest'
+    imgURL: "/assets/icons/home.svg",
+    route: "/",
+    label: "Home",
   },
   {
-    label: 'Recommended Questions',
-    tag: 'recommended'
+    imgURL: "/assets/icons/users.svg",
+    route: "/community",
+    label: "Community",
   },
   {
-    label: 'Frequent',
-    tag: 'frequent'
+    imgURL: "/assets/icons/star.svg",
+    route: "/collection",
+    label: "Collections",
   },
   {
-    label: 'Unanswered',
-    tag: 'unanswered'
-  }
-]
+    imgURL: "/assets/icons/suitcase.svg",
+    route: "/jobs",
+    label: "Find Jobs",
+  },
+  {
+    imgURL: "/assets/icons/tag.svg",
+    route: "/tags",
+    label: "Tags",
+  },
+  {
+    imgURL: "/assets/icons/user.svg",
+    route: "/profile",
+    label: "Profile",
+  },
+  {
+    imgURL: "/assets/icons/question.svg",
+    route: "/ask-question",
+    label: "Ask a question",
+  },
+];
+
+export const BADGE_CRITERIA = {
+  QUESTION_COUNT: {
+    BRONZE: 10,
+    SILVER: 50,
+    GOLD: 100,
+  },
+  ANSWER_COUNT: {
+    BRONZE: 10,
+    SILVER: 50,
+    GOLD: 100,
+  },
+  QUESTION_UPVOTES: {
+    BRONZE: 10,
+    SILVER: 50,
+    GOLD: 100,
+  },
+  ANSWER_UPVOTES: {
+    BRONZE: 10,
+    SILVER: 50,
+    GOLD: 100,
+  },
+  TOTAL_VIEWS: {
+    BRONZE: 1000,
+    SILVER: 10000,
+    GOLD: 100000,
+  },
+};
+
+export const THEME_STORAGE_KEY = "theme";
+export const GLOBAL_SEARCH_PARAMS_KEY = "global";
+export const SEARCH_TYPE_PARAMS_KEY = "type";
+export const QUERY_SEARCH_PARAMS_KEY = "q";
+export const FILTER_SEARCH_PARAMS_KEY = "filter";
+export const PAGE_NUMBER_SEARCH_PARAMS_KEY = "page";

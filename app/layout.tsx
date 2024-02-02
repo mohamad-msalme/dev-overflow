@@ -1,37 +1,49 @@
-import { inter, SpaceGrotesk } from './fonts'
-import { NavBar } from '@/components/shared/nav-bar/NavBar'
-import { Header } from '@/components/shared/header/Header'
-import { META_DATA } from './metadate'
-import { ThemeProvider } from '@/components/ThemeProvider'
-import '@/styles/globals.css'
-import { ClerkProvider } from '@clerk/nextjs'
+import type { Metadata } from "next";
+// eslint-disable-next-line camelcase
+import { Inter, Space_Grotesk } from "next/font/google";
+import { ReactNode } from "react";
+import { ClerkProvider } from "@clerk/nextjs";
+import { ThemeProvider } from "@/context/ThemeProvider";
 
-export const metadata = META_DATA
+import "./globals.css";
+import "../styles/prism.css";
 
-export default function RootLayout({
-  children
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-spaceGrotesk",
+});
+
+export const metadata: Metadata = {
+  title: "Dev Overflow",
+  description:
+    "A community-driven platform for asking and answering programming questions. Get help, share knowledge and collaborate with developers from around the world. Explore topics in web developments, mobile app development, algorithms, data structures and more...",
+  icons: {
+    icon: "/assets/images/logo.png",
+  },
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${SpaceGrotesk.variable}`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
         <ClerkProvider
           appearance={{
-            variables: {
-              colorPrimary: '#FF7000'
-            }
+            elements: {
+              formButtonPrimary: "primary-gradient",
+              footerActionLink: "primary-text-gradient hover:text-primary-500",
+            },
           }}
         >
-          <ThemeProvider>
-            <div className=" min-h-screen grid grid-cols-[minmax(min-content,max-content)_1fr] grid-rows-[100px_1fr] max-sm:grid-cols-1 ">
-              <NavBar />
-              <Header />
-              <main className="">{children}</main>
-            </div>
-          </ThemeProvider>
+          <ThemeProvider>{children}</ThemeProvider>
         </ClerkProvider>
       </body>
     </html>
-  )
+  );
 }
