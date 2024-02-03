@@ -46,32 +46,28 @@ Explore the source code and delve into the world of modern web development with 
 
 ### Home Page
 
-![Home Page](./assets//home_page.png)
+![Home Page](./assets//home.png)
 
 ### Community Page
 
-![Community Page](./assets/community_page.png)
+![Community Page](./assets/community.png)
 
 ### Collections Page
 
-![Collections Page](./assets/collections_page.png)
+![Collections Page](./assets/collections.png)
 
 ### Find Jobs Page
 
-![Jobs Page](./assets/jobs_page.png)
+![Jobs Page](./assets/find-jobs.png)
 
 ### Tags Page
 
-![Tags Page](./assets/tags_page.png)
+![Tags Page](./assets/tags.png)
 
 ### Profile Page
 
-![Profile Page](./assets/profile_page.png)
+![Profile Page](./assets/profile.png)
 
 ### Ask a Question Page
 
-![Ask a Question Page](./assets/ask_a_question_page.png)
-
-### Question Details Page
-
-![Question Details Page](./assets/question_details_page.png)
+![Ask a Question Page](./assets/ask-quetion.png)
